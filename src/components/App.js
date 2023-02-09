@@ -17,7 +17,7 @@ function App() {
   },[])
 
   const searched = planeteers.filter((planeteer)=>{
-    return planeteer.name.toLowerCase().includes(searchQ);
+    return planeteer.name.toLowerCase().includes(searchQ.toLowerCase()) || planeteer.bio.toLowerCase().includes(searchQ.toLowerCase());
   })
 
 
